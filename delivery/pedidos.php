@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $telefone=$_POST['telefone'];
     $sabores=$_POST['pizza'];
     $acompanhamentos=$_POST['acompanhamento'] ?? null;
+    //$acompanhamentos_json = json_encode($acompanhamentos);
     $bairro=$_POST['bairro'];
     $rua=$_POST['rua'];
     $cep=$_POST['cep'];

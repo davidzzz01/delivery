@@ -61,41 +61,47 @@ include("header.php");
         <option value="<?php echo $pizza; ?>"><?php echo $pizza; ?></option >
     <?php } ?>
 </select>
-<label><b>Acompanhamentos:</b></label><br>
-<input type="checkbox" name="acompanhamento" > Coca-cola<br>
-<input type="checkbox" name="acompanhamento"> Sprite<br>
-<input type="checkbox" name="acompanhamento"> Ketchup<br>
-<input type="checkbox"name="acompanhamento" > Barbecue<br>
-<input type="checkbox"name="acompanhamento"> Maionese<br>
-<input type="checkbox" name="acompanhamento"> Molho especial<br><hr>
-<div class="form-group">
-    <div class="row">
-        <p><b>Endereço:</b></p>
-        <div class="col">
-            <label for="cep">CEP:</label>
-            <input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu CEP" onblur="pesquisacep(this.value)">
+        <label><b>Acompanhamentos:</b></label><br>
+        <input type="checkbox" name="acompanhamento" value="Coca-cola"> Coca-cola<br>
+        <input type="checkbox" name="acompanhamento" value="Sprite"> Sprite<br>
+        <input type="checkbox" name="acompanhamento" value="Ketchup"> Ketchup<br>
+        <input type="checkbox" name="acompanhamento" value="Barbecue"> Barbecue<br>
+        <input type="checkbox" name="acompanhamento" value="Maionese"> Maionese<br>
+        <input type="checkbox" name="acompanhamento" value="Molho especial"> Molho especial<br><hr>
+
+        <div class="form-group">
+            <div class="row">
+                <p><b>Endereço:</b></p>
+                <div class="col">
+                    <label for="cep">CEP:</label>
+                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Digite seu CEP" onblur="pesquisacep(this.value)">
+                </div>
+                <div class="col">
+                    <label for="endereco">Rua:</label>
+                    <input class="form-control" type="text" id="rua" name="rua" placeholder="Digite sua rua">
+                </div>
+                <div class="col">
+                    <label for="bairro">Bairro:</label>
+                    <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
+                </div>
+                <div class="col">
+                    <label for="cep">Cidade:</label>
+                    <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Digite  sua Cidade">
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <label for="endereco">Rua:</label>
-            <input class="form-control" type="text" id="rua" name="rua" placeholder="Digite sua rua">
-        </div>
-        <div class="col">
-            <label for="bairro">Bairro:</label>
-            <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro">
-        </div>
-        <div class="col">
-            <label for="cep">Cidade:</label>
-            <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Digite  sua Cidade">
-        </div>
-    </div>
-</div>
-<br>
-<input type="submit" class="btn btn-success" onclick="">
+        <br>
+        <input type="submit" class="btn btn-success" onclick="">
  </form>
 <?php include("footer.php")?>
 </body>
 
-<script src="script.js">
-     
+<script>
+const form=document.querySelector('#form-group');
+const cep=document.querySelector('#cep');
+const rua=document.querySelector('#rua');
+const bairro=document.querySelector('#bairro');
+const cidade=document.querySelector('#cidade');
+
 </script>
 </html>
