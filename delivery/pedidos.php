@@ -6,14 +6,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sabores=$_POST['pizza'];
     $acompanhamentos=$_POST['acompanhamento'] ?? null;
     //$acompanhamentos_json = json_encode($acompanhamentos);
-    $bairro=$_POST['bairro'];
-    $rua=$_POST['rua'];
+    $bairro=$_POST['endereco'];
+
     $cep=$_POST['cep'];
 }
 
 include("conexao.php");
 
-$sql = "INSERT INTO pedidos (nome_cliente, telefone, sabores, acompanhamentos, cep, bairro, rua) VALUES ('$nome', ' $telefone', '$sabores','$acompanhamentos','$cep', '$bairro', '$rua')";
+$sql = "INSERT INTO pedidos (nome_cliente, telefone, sabores, acompanhamentos, cep, endereco) VALUES ('$nome', ' $telefone', '$sabores','$acompanhamentos','$cep', '$enderco')";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");
