@@ -17,7 +17,7 @@ $sql = "INSERT INTO pedidos (nome_cliente, telefone, sabores, acompanhamentos, c
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");
-
+    
     exit();
 } else {
     echo "Erro ao inserir registro: " . $conn->error;
