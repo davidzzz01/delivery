@@ -54,6 +54,5 @@ document.querySelector('#submit').addEventListener('focus', function (e) {
 
 
 
-    var validacep = /^[0-9]{8}$/;
 
 
