@@ -70,12 +70,12 @@ include("header.php");
             <?php } ?>
         </select>
         <label><b>Acompanhamentos:</b></label><br>
-        <input type="checkbox" name="acompanhamento" value="Coca-cola"> Coca-cola<br>
-        <input type="checkbox" name="acompanhamento" value="Sprite"> Sprite<br>
-        <input type="checkbox" name="acompanhamento" value="Ketchup"> Ketchup<br>
-        <input type="checkbox" name="acompanhamento" value="Barbecue"> Barbecue<br>
-        <input type="checkbox" name="acompanhamento" value="Maionese"> Maionese<br>
-        <input type="checkbox" name="acompanhamento" value="Molho especial"> Molho especial<br>
+        <input type="checkbox" name="acompanhamento[]" value="Coca-cola"> Coca-cola<br>
+        <input type="checkbox" name="acompanhamento[]" value="Sprite"> Sprite<br>
+        <input type="checkbox" name="acompanhamento[]" value="Ketchup"> Ketchup<br>
+        <input type="checkbox" name="acompanhamento[]" value="Barbecue"> Barbecue<br>
+        <input type="checkbox" name="acompanhamento[]" value="Maionese"> Maionese<br>
+        <input type="checkbox" name="acompanhamento[]" value="Molho especial"> Molho especial<br>
         <hr>
 
         <div class="form-group">
